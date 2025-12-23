@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>獨立樂團-八青哥</title>
+
+    </head>
+<body>
+
+  <nav class="nav">
+  <ul>
+    <li><a href="index.html" class="active">樂團總覽</a></li>
+    <li><a href="songs.html">歌曲介紹</a></li>
+    <li><a href="support.html">粉絲應援紀錄</a></li>
+  </ul>
+</nav>
+
+  <header class="hero">
+    <h1>八青哥</h1>
+     <div class="icon-list">
+    <div class="icon" data-name="八青哥" data-info="標題">
+      <img src="images/八青哥.png" alt="八青哥">
+
+    </div>
+    <p>獨立樂團介紹</p>
+  </header>
+
+  <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-name"></h3>
+    <p id="modal-info"></p>
+  </div>
+</div>
+
+<section class="carousel">
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="images/photo1.jpg" alt="照片1">
+      <img src="images/photo2.jpg" alt="照片2">
+      <img src="images/photo3.jpg" alt="照片3">
+      <img src="images/photo4.jpg" alt="照片4">
+      <img src="images/photo5.jpg" alt="照片5">
+      <img src="images/photo6.jpg" alt="照片6">
+
+    </div>
+  </div>
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</section>
+
+
+<section class="members">
+  <h2>團員介紹</h2>
+  <div class="member-list">
+    <div class="member" data-name="閔翔" data-info="張敏翔，1990/11/01，天蠍座，吉他手，在團體中擔任吉他手，負責錄音、編曲等幕後工作。">
+      <img src="images/min.jpg" alt="閔翔">
+      <p>閔翔</p>
+    </div>
+    <div class="member" data-name="Yolo" data-info="Yolo，1991/07/20，巨蠍座，主唱，負責歌詞創作、編曲，擅長在舞台上亂跑。">
+      <img src="images/yolo.jpg" alt="Yolo">
+      <p>Yolo</p>
+    </div>
+    <div class="member" data-name="阿熊" data-info="阿熊，1991/02/28，雙魚座，吉他手兼KB，負責編曲，週三會在IG發阿熊學長的社課Reels。">
+      <img src="images/asyong.jpg" alt="阿熊">
+      <p>阿熊</p>
+    </div>
+      
+  </div>
+
+  
+
+
+<script src="main.js"></script>
+
+
+</body>
+
+
+</section>
+
+
+    <style>
+ body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(
+    160deg,
+    #1a7dfe 0%,
+    #4c7dd7 40%,
+    hwb(204 68% 9%) 100%
+  );
+  color: #0a2540;
+}
+
+
+  /* --- 標題區 --- */
+  .hero {
+    height: 100vh;              /* 滿版高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* 垂直置中 */
+    align-items: center;        /* 水平置中 */
+    text-align: center;
+    padding: 20px;
+     height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-image: radial-gradient(
+    rgba(222, 248, 255, 0.08) 2px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+  
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 8rem);
+    letter-spacing: 0.1em;
+    margin: 0;
+    color: #0c1d4b;  
+
+  }
+
+  .hero p {
+    margin-top: 50px;
+    font-size: clamp(1rem, 4vw, 4rem);
+    letter-spacing: 0.3em;
+    opacity: 0.6;
+    color: hsl(0, 0%, 100%);
+
+  }
+  
+  
+
+ 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.hero p {
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.icon {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.icon h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.icon img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.icon p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #0a2540;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+.members {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.members h2 {
+  font-size: 4rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.member {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.member img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.member p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #0a2540;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.modal {
+  display: none; /* 預設隱藏 */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 37, 64, 0.8); /* 深藍透明背景 */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #000000;
+}
+
+.modal-content p {
+  margin-top: 15px;
+  color: #0f64b9;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 37, 64, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.nav a {
+  color: #cfe0ff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #6aa9ff;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 90%;              /* 寬度隨螢幕縮放 */
+  max-width: 1000px;       /* 最大寬度 */
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carousel-container {
+  width: 100%;
+  aspect-ratio: 16/9;      /* 高度跟隨寬度自動調整，保持16:9比例 */
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;            /* 填滿容器高度 */
+  object-fit: cover;       /* 保持比例並裁切超出部分 */
+  flex-shrink: 0;
+}
+
+/* 箭頭 */
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(10,37,64,0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+.carousel button:hover { background: rgba(10,37,64,0.9); }
+
+
+
+
+</style>
+
+
+
+
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌曲介紹｜八青哥</title>
+
+    </head>
+<body>
+
+ <nav class="nav">
+  <ul>
+    <li><a href="index.html">樂團總覽</a></li>
+    <li><a href="songs.html" class="active">歌曲介紹</a></li>
+    <li><a href="support.html">粉絲應援紀錄</a></li>
+  </ul>
+</nav>
+
+  <header class="hero">
+    <h1>八青哥</h1>
+     <div class="icon-list">
+    <div class="icon" data-name="八青哥" data-info="標題">
+      <img src="images/八青哥.png" alt="八青哥">
+
+    </div>
+    <p>獨立樂團介紹</p>
+  </header>
+
+  <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-name"></h3>
+    <p id="modal-info"></p>
+  </div>
+</div>
+
+<section class="songs">
+  <h2>歌曲介紹</h2>
+
+  <div class="song-list">
+    <a class="song-card"
+       href="https://streetvoice.com/8_youth_men/songs/838561/"
+       target="_blank">
+      <h3>上我的車</h3>
+      <p>
+        你有沒有聞過臭豆腐的味道？<br>
+        喔～好臭，再聞一口！<br>
+        喔真的臭，再聞一口…<br><br>
+
+        上我的車，就是一首<br>
+        「臭豆腐style的歌」<br>
+        喔～好怪，再聽一下！
+      </p>
+      <span>▶ 前往收聽</span>
+    </a>
+
+    <a class="song-card"
+       href="https://streetvoice.com/8_youth_men/songs/826769/"
+       target="_blank">
+      <h3>以後的事以後再說</h3>
+      <p>
+        「就不愛了，何來承諾？<br>
+        沒有承諾，何來以後。」<br><br>
+
+        直到能再侃侃而談，已經是好久以後。<br>
+        那些在「以後」來之前的事，<br>
+        全寫進這首歌裡了。
+      </p>
+      <span>▶ 前往收聽</span>
+    </a>
+
+    <a class="song-card"
+       href="https://streetvoice.com/8_youth_men/songs/812966/"
+       target="_blank">
+      <h3>你是不是也喜歡我呀?</h3>
+      <p>
+        你不知道的是，我隨時準備好衝向你、擁抱你。
+但那時候，我們都沒有辦法想像，也無法承擔開口的後果。
+
+即使在腦中百轉千迴，沙盤推演。
+但就在話要吐出的那一瞬間。
+一切的準備都如雲煙。
+      </p>
+      <span>▶ 前往收聽</span>
+    </a>
+
+    <a class="song-card"
+       href="https://streetvoice.com/8_youth_men/songs/812966/"
+       target="_blank">
+      <h3>魯卡司(Loser Cast)專輯</h3>
+      <p>
+        人生就像一場遊戲，充滿著機會與命運。不僅很難贏，還常常輸。
+
+然而，凡認真地活著，就必定會遭遇失敗。
+任憑：「心碎小狗、暈船達人、築夢失志、社畜人生、得了沒有辦法上班上課的病...」
+慢慢堆疊出我們存在的證明。
+即使全身充滿魯（Lose）味，你還敢擲出下回合骰子嗎？還敢抬起步伐嗎？
+亦或者，你覺得你逃得掉嗎？
+
+來吧！大聲詠唱出，屬於你的咒語。
+沒能成為桌遊市場的最後Winner也沒關係！
+一起來加入這局Loser Cast吧！
+      </p>
+      <span>▶ 前往收聽</span>
+    </a>
+
+  </div>
+</section>
+
+
+
+
+
+</body>
+
+
+</section>
+
+
+    <style>
+ body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(
+    160deg,
+    #1a7dfe 0%,
+    #4c7dd7 40%,
+    hwb(204 68% 9%) 100%
+  );
+  color: #0a2540;
+}
+
+
+  /* --- 標題區 --- */
+  .hero {
+    height: 100vh;              /* 滿版高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* 垂直置中 */
+    align-items: center;        /* 水平置中 */
+    text-align: center;
+    padding: 20px;
+     height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-image: radial-gradient(
+    rgba(222, 248, 255, 0.08) 2px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+  
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 8rem);
+    letter-spacing: 0.1em;
+    margin: 0;
+    color: #0c1d4b;  
+
+  }
+
+  .hero p {
+    margin-top: 50px;
+    font-size: clamp(1rem, 4vw, 4rem);
+    letter-spacing: 0.3em;
+    opacity: 0.6;
+    color: hsl(0, 0%, 100%);
+
+  }
+  
+  
+
+ 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.hero p {
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.icon {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.icon h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.icon img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.icon p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #0a2540;
+}
+
+.icon:hover {
+  transform: translateY(-5px);
+}
+
+.members {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.members h2 {
+  font-size: 4rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.member {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.member img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.member p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #0a2540;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.modal {
+  display: none; /* 預設隱藏 */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 37, 64, 0.8); /* 深藍透明背景 */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #000000;
+}
+
+.modal-content p {
+  margin-top: 15px;
+  color: #0f64b9;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 37, 64, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.nav a {
+  color: #cfe0ff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #6aa9ff;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.song-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.song-card {
+  width: 280px;
+  padding: 25px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 16px;
+  text-decoration: none;
+  color: #0a2540;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.song-card span {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #1a7dfe;
+}
+
+.song-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.songs {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.songs h2 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+/* 卡片容器 */
+.song-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 卡片本體 */
+.song-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  text-decoration: none;
+  color: #0a2540;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 文字 */
+.song-card h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.song-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+/* 行動按鈕 */
+.song-card span {
+  align-self: flex-end;
+  color: #1a7dfe;
+  font-weight: 600;
+}
+
+/* Hover 動畫 */
+.song-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+
+</style>
+
+
+
+
+</html>
