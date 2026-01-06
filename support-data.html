@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>粉絲應援紀錄</title>
+  <link rel="stylesheet" href="support.css">
+</head>
+<body>
+  <h1>FAN SUPPORT</h1>
+  <p>謝謝每一份溫柔的應援</p>
+
+  <div class="support-list" id="support-list">
+    <!-- JS 會自動生成卡片 -->
+  </div>
+
+  <script src="support.js"></script>
+</body>
+
+</section>
+
+
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.support-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.support-card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+}
+
+.support-card img {
+  width: 100%;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.support-card .card-content {
+  padding: 15px;
+}
+
+.support-card h3 {
+  margin: 0 0 10px;
+}
+
+.support-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+ </style>
+
+</html>

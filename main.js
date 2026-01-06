@@ -52,3 +52,5 @@ setInterval(() => {
   if (counter >= slides.length) counter = 0;
   showSlide();
 }, 4000); // 7秒換一張
+
+
