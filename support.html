@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>粉絲應援作品紀錄</title>
-
+ <link rel="stylesheet" href="support.css">
     </head>
 <body>
 
@@ -31,11 +31,11 @@
 
 <script src="parallax.js" defer></script>
 
-<section class="support-cards" id="supportCards"></section>
+<div class="support-list" id="support-list">
+    <!-- JS 會自動生成卡片 -->
+  </div>
 
-<script src="support.js"></script>
-
-
+  <script src="support.js"></script>
 
 
 </body>
@@ -220,31 +220,56 @@
   display: inline-block;
 }
 
-
-
-
-/* 應援卡整個區塊 */
-.support-cards {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 20px;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
+font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  padding: 20px;
 }
 
-/* 單張卡片 */
-.support-card {
+h1 {
   text-align: center;
 }
 
+.support-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
 
+.support-card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 
-/* 文字 */
+.support-card:hover {
+  transform: translateY(-5px);
+}
+
+.support-card img {
+  width: 100%;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.support-card .card-content {
+  padding: 15px;
+}
+
+.support-card h3 {
+  margin: 0 0 10px;
+}
+
 .support-card p {
-  margin-top: 14px;
-  font-size: 1rem;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 

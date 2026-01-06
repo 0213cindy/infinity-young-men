@@ -1,18 +1,25 @@
-fetch("support-data.json")
+// support.js
+fetch('support-data.json')
   .then(res => res.json())
   .then(data => {
-    const container = document.getElementById("supportCards");
+    const supportList = document.getElementById('support-list');
 
     data.forEach(item => {
-      const card = document.createElement("a");
-      card.className = "support-card";
-      card.href = `support-detail.html?id=${item.id}`;
-
+      const card = document.createElement('div');
+      card.className = 'support-card';
       card.innerHTML = `
-        <img src="${item.image}">
-        <p>${item.title}</p>
+        <img src="${item.images[0]}" alt="${item.title}">
+        <div class="card-content">
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+        </div>
       `;
 
-      container.appendChild(card);
+      // 點擊跳轉到詳細頁，帶上 id
+      card.addEventListener('click', () => {
+        window.location.href = `support-detail.html?id=${item.id}`;
+      });
+
+      supportList.appendChild(card);
     });
   });
