@@ -23,4 +23,3 @@ fetch('support-data.json')
       supportList.appendChild(card);
     });
   });
-
